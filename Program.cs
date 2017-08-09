@@ -15,8 +15,7 @@ namespace WebApp
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseStartup<Startup>()
-                .UseUrls("http://*:6060")
+                .UseStartup<Startup>()                
                 .Build();
 
             host.Run();

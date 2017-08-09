@@ -5,8 +5,8 @@ WORKDIR /app
 RUN dotnet restore
 RUN dotnet build
 
-EXPOSE 6060/tcp
-ENV ASPNETCORE_URLS http://*:6060
+EXPOSE 5000/tcp
+ENV ASPNETCORE_URLS http://*:5000
 ENV ASPNETCORE_ENVIRONMENT docker
 
 ENTRYPOINT dotnet run
